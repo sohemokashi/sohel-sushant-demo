@@ -1,0 +1,7 @@
+site_name: "sohel-sushant-demo"
+docs_dir: docs
+site_description: "sohel-sushant-demo"
+nav:
+  - Introduction: index.md
+plugins:
+  - techdocs-core

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "sohel-sushant-demo"
+  description: "sohel-sushant-demo"
+  links:
+    - title: Website
+      # Change the template in the future to collect the domain name mtk8s.io
+      # parameters.properties.name(type: string,default: 'world!')
+      url: https://sohel-sushant-demo.mtk8s.io
+  annotations:
+    argocd/app-name: "sohel-sushant-demo"
+    sonarqube.org/project-key: "sohel-sushant-demo"
+    jenkins.io/job-full-name: "sohel-sushant-demo_App_Pipeline"
+    github.com/project-slug: sohemokashi/sohel-sushant-demo
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "sohel-sushant-demo"
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/voyagers-corp"
